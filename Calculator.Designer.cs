@@ -239,6 +239,7 @@
             this.Button_Equals.TabIndex = 18;
             this.Button_Equals.Text = "=";
             this.Button_Equals.UseVisualStyleBackColor = true;
+            this.Button_Equals.Click += new System.EventHandler(this.Button_Equals_Click);
             // 
             // Textbox_Debug
             // 

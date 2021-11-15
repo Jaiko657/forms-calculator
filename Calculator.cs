@@ -8,7 +8,7 @@ namespace forms_calculator
         }
 
         string[] OPERATORS = { "+", "-", "x", "÷" };
-        string[] NUMBERS = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
+        string[] NUMBERS = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "." };
 
         public List<string> CalculationList = new();
         public string ScreenText = "";
@@ -94,10 +94,30 @@ namespace forms_calculator
             }
             catch
             {
-                Textbox_Debug.Text = "Delete: Couldnt";
+                Textbox_Debug.Text = "Delete: Couldn\'t";
                 return;
             }
 
+        }
+
+        private void Button_Equals_Click(object sender, EventArgs e)
+        {
+            decimal Answer;
+            foreach(string item in CalculationList)
+            {
+                if (NUMBERS.Any(item.Contains))
+                {
+                    if (Answer.ToString() = "")
+                    {
+                        Answer = System.Convert.ToDecimal(item);
+                    }
+                    else
+                    {
+                        //Answer
+                    }
+                }
+            }
+            Textbox_Screen.Text = Answer.ToString();
         }
     }
 }
